@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <style>
+      body{
+        background-color: burlywood;
+      }
+      #img{
+       justify-content: center;
+       justify-items: center;
+       align-items: center;
+      }
+      #img img{
+        height: 550px;
+        width: auto;
+        object-fit: cover;
+      }
+      .button{
+        display: flex;
+        width: 100%;
+        gap: 100px;
+       justify-content: center;
+       margin-top: 20px;
+      }
+      #btn{
+        width: auto;
+       flex-wrap: wrap;
+      }
+      #card{
+        border-radius: 30px;
+        border: none;
+        text-align: center;
+      }
+      #card-body{
+       font-size: 26px;
+       border-radius: 30px;
+       font-size: 28px;
+       
+      }
+       #card-body h4{
+        color: chocolate;
+        font-size: 28px;
+        padding-bottom: 20px;
+       }
+        #card-body h6{
+          font-size: 25px;
+          transition: 0.5s;
+          padding-bottom: 10px;
+        }
+         #card-body h6:hover{
+          color: indianred;
+          transform: scale(1.1);
+         }
+          #card-body img{
+            height: 40px;
+            padding-right: 10px;
+          }
+    </style>  
+  </head>
+  <body>
+  <nav class="navbar navbar-expand-lg bg-danger px-5 py-0 m-3">
+  <div class="container">
+    <a class="navbar-brand fs-4" href="#">Portfolio.</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse position-absolute end-0 text-center px-5 me-5 fs-5" id="navbarNavAltMarkup">
+      <div class="navbar-nav gap-5 ">
+        <a class="nav-link active" aria-current="page" href="#">Home</a>
+        <a class="nav-link" href="#">Contact</a>
+        <a class="nav-link" href="#">About</a>
+        <a class="nav-link" href="#">Skills</a>
+      </div>
+    </div>
+  </div>
+</nav>
+<div class="container my-3">
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner" id="img">
+    <div class="carousel-item active">
+      <img src="https://images.pexels.com/photos/3008100/pexels-photo-3008100.jpeg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://images.pexels.com/photos/1446624/pexels-photo-1446624.jpeg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://images.pexels.com/photos/698508/pexels-photo-698508.jpeg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://images.pexels.com/photos/137032/pexels-photo-137032.jpeg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://images.pexels.com/photos/1403653/pexels-photo-1403653.jpeg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://images.pexels.com/photos/9653183/pexels-photo-9653183.jpeg" class="d-block w-100" alt="...">
+    </div>
+  </div>
+</div>
+</div>
+ <div class="card  m-3 " id="card" style="width:70%; background-color: crimson;color: burlywood; justify-self:center;">
+    <h5 class="card-title fs-1"> I'M Nagendra Kothapalli</h5>
+  <div class="card-header fs-2">Frontend developer</div>
+  <div class="card-body" id="card-body" style="background-color: darkslategrey;color: goldenrod;">
+    <p class="card-text"><h4>My Skills</h4> 
+  <h6><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNTYiIGhlaWdodD0iMzYxIiB2aWV3Qm94PSIwIDAgMjU2IDM2MSI+PHBhdGggZmlsbD0iI2U0NGQyNiIgZD0ibTI1NS41NTUgNzAuNzY2bC0yMy4yNDEgMjYwLjM2bC0xMDQuNDcgMjguOTYybC0xMDQuMTgyLTI4LjkyMkwuNDQ1IDcwLjc2NnoiLz48cGF0aCBmaWxsPSIjZjE2NTI5IiBkPSJtMTI4IDMzNy45NWw4NC40MTctMjMuNDAzbDE5Ljg2LTIyMi40OUgxMjh6Ii8+PHBhdGggZmlsbD0iI2ViZWJlYiIgZD0iTTgyLjgyIDE1NS45MzJIMTI4di0zMS45MzdINDcuOTE3bC43NjQgOC41NjhsNy44NSA4OC4wMUgxMjh2LTMxLjkzN0g4NS43Mzl6bTcuMTk4IDgwLjYxaC0zMi4wNmw0LjQ3NCA1MC4xNDZsNjUuNDIxIDE4LjE2bC4xNDctLjA0VjI3MS41OGwtLjE0LjAzN2wtMzUuNTY4LTkuNjA0eiIvPjxwYXRoIGQ9Ik0yNC4xOCAwaDE2LjIzdjE2LjAzNWgxNC44NDdWMGgxNi4yMzF2NDguNTU4aC0xNi4yM3YtMTYuMjZINDAuNDExdjE2LjI2aC0xNi4yM1YwTTkyLjgzIDE2LjEwM0g3OC41NDRWMGg0NC44MTR2MTYuMTAzaC0xNC4yOTV2MzIuNDU1aC0xNi4yM1YxNi4xMDN6TTEzMC40NyAwaDE2LjkyM2wxMC40MSAxNy4wNjJMMTY4LjIwMyAwaDE2LjkzdjQ4LjU1OGgtMTYuMTY0VjI0LjQ5bC0xMS4xNjYgMTcuMjY1aC0uMjhMMTQ2LjM1IDI0LjQ5djI0LjA2OGgtMTUuODh6bTYyLjc0IDBoMTYuMjM1djMyLjUwOGgyMi44MjR2MTYuMDVoLTM5LjA2eiIvPjxwYXRoIGZpbGw9IiNmZmYiIGQ9Ik0xMjcuODkgMjIwLjU3M2gzOS4zMjdsLTMuNzA4IDQxLjQybC0zNS42MiA5LjYxNHYzMy4yMjZsNjUuNDczLTE4LjE0NWwuNDgtNS4zOTZsNy41MDYtODQuMDhsLjc3OS04LjU3NkgxMjcuODl6bTAtNjQuNzE5di4wNzhoNzcuMTQzbC42NC03LjE3OGwxLjQ1Ni0xNi4xOTFsLjc2My04LjU2OEgxMjcuODl6Ii8+PC9zdmc+" class="img-fluid" alt="...">Html</h6>
+  <h6><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNTYiIGhlaWdodD0iMzYxIiB2aWV3Qm94PSIwIDAgMjU2IDM2MSI+PHBhdGggZmlsbD0iIzI2NGRlNCIgZD0iTTEyNy44NDQgMzYwLjA4OEwyMy42NjIgMzMxLjE2NkwuNDQ1IDcwLjc2NmgyNTUuMTFsLTIzLjI0MSAyNjAuMzZ6Ii8+PHBhdGggZmlsbD0iIzI5NjVmMSIgZD0ibTIxMi40MTcgMzE0LjU0N2wxOS44Ni0yMjIuNDlIMTI4VjMzNy45NXoiLz48cGF0aCBmaWxsPSIjZWJlYmViIiBkPSJtNTMuNjY5IDE4OC42MzZsMi44NjIgMzEuOTM3SDEyOHYtMzEuOTM3em0tNS43NTItNjQuNjQxbDIuOTAzIDMxLjkzN0gxMjh2LTMxLjkzN3pNMTI4IDI3MS41OGwtLjE0LjAzN2wtMzUuNTY4LTkuNjA0bC0yLjI3NC0yNS40NzFoLTMyLjA2bDQuNDc0IDUwLjE0Nmw2NS40MjEgMTguMTZsLjE0Ny0uMDR6Ii8+PHBhdGggZD0iTTYwLjQ4NCAwaDM4LjY4djE2LjE3Nkg3Ni42NnYxNi4xNzZoMjIuNTA2djE2LjE3NUg2MC40ODR6bTQ2LjQxNyAwaDM4LjY4MXYxNC4wNjZoLTIyLjUwNXYyLjgxM2gyMi41MDV2MzIuMzUyaC0zOC42OFYzNC40NmgyMi41MDV2LTIuODEzSDEwNi45em00Ni40MTggMEgxOTJ2MTQuMDY2aC0yMi41MDV2Mi44MTNIMTkydjMyLjM1MmgtMzguNjgxVjM0LjQ2aDIyLjUwNXYtMi44MTNIMTUzLjMyeiIvPjxwYXRoIGZpbGw9IiNmZmYiIGQ9Im0yMDIuMTI3IDE4OC42MzZsNS43NjUtNjQuNjQxSDEyNy44OXYzMS45MzdoNDUuMDAybC0yLjkwNiAzMi43MDRIMTI3Ljg5djMxLjkzN2gzOS4zMjdsLTMuNzA4IDQxLjQybC0zNS42MiA5LjYxNHYzMy4yMjZsNjUuNDczLTE4LjE0NWwuNDgtNS4zOTZsNy41MDYtODQuMDh6Ii8+PC9zdmc+" class="img-fluid" alt="...">Css</h6>
+  <h6><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgdmlld0JveD0iMCAwIDMyIDMyIj48cGF0aCBmaWxsPSIjZjVkZTE5IiBkPSJNMiAyaDI4djI4SDJ6Ii8+PHBhdGggZD0iTTIwLjgwOSAyMy44NzVhMi44NyAyLjg3IDAgMCAwIDIuNiAxLjZjMS4wOSAwIDEuNzg3LS41NDUgMS43ODctMS4zYzAtLjktLjcxNi0xLjIyMi0xLjkxNi0xLjc0N2wtLjY1OC0uMjgyYy0xLjktLjgwOS0zLjE2LTEuODIyLTMuMTYtMy45NjRjMC0xLjk3MyAxLjUtMy40NzYgMy44NTMtMy40NzZhMy44OSAzLjg5IDAgMCAxIDMuNzQyIDIuMTA3TDI1IDE4LjEyOEExLjc5IDEuNzkgMCAwIDAgMjMuMzExIDE3YTEuMTQ1IDEuMTQ1IDAgMCAwLTEuMjU5IDEuMTI4YzAgLjc4OS40ODkgMS4xMDkgMS42MTggMS42bC42NTguMjgyYzIuMjM2Ljk1OSAzLjUgMS45MzYgMy41IDQuMTMzYzAgMi4zNjktMS44NjEgMy42NjctNC4zNiAzLjY2N2E1LjA2IDUuMDYgMCAwIDEtNC43OTUtMi42OTFabS05LjI5NS4yMjhjLjQxMy43MzMuNzg5IDEuMzUzIDEuNjkzIDEuMzUzYy44NjQgMCAxLjQxLS4zMzggMS40MS0xLjY1M3YtOC45NDdoMi42MzF2OC45ODJjMCAyLjcyNC0xLjYgMy45NjQtMy45MjkgMy45NjRhNC4wODUgNC4wODUgMCAwIDEtMy45NDctMi40WiIvPjwvc3ZnPg==" class="img-fluid" alt="...">Js</h6>
+  <h6><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMjgiIGhlaWdodD0iMTI4IiB2aWV3Qm94PSIwIDAgMTI4IDEyOCI+PHBhdGggZmlsbD0iI2YzNGYyOSIgZD0iTTEyNC43MzcgNTguMzc4TDY5LjYyMSAzLjI2NGMtMy4xNzItMy4xNzQtOC4zMi0zLjE3NC0xMS40OTcgMEw0Ni42OCAxNC43MWwxNC41MTggMTQuNTE4YzMuMzc1LTEuMTM5IDcuMjQzLS4zNzUgOS45MzIgMi4zMTRjMi43MDMgMi43MDYgMy40NjEgNi42MDcgMi4yOTQgOS45OTNsMTMuOTkyIDEzLjk5M2MzLjM4NS0xLjE2NyA3LjI5Mi0uNDEzIDkuOTk0IDIuMjk1YzMuNzggMy43NzcgMy43OCA5LjkgMCAxMy42NzlhOS42NzMgOS42NzMgMCAwIDEtMTMuNjgzIDBhOS42OCA5LjY4IDAgMCAxLTIuMTA1LTEwLjUyMUw2OC41NzQgNDcuOTMzbC0uMDAyIDM0LjM0MWE5LjcgOS43IDAgMCAxIDIuNTU5IDEuODI4YzMuNzc4IDMuNzc3IDMuNzc4IDkuODk4IDAgMTMuNjgzYy0zLjc3OSAzLjc3Ny05LjkwNCAzLjc3Ny0xMy42NzkgMGMtMy43NzgtMy43ODQtMy43NzgtOS45MDUgMC0xMy42ODNhOS43IDkuNyAwIDAgMSAzLjE2Ny0yLjExVjQ3LjMzM2E5LjYgOS42IDAgMCAxLTMuMTY3LTIuMTExYy0yLjg2Mi0yLjg2LTMuNTUxLTcuMDYtMi4wODMtMTAuNTc2TDQxLjA1NiAyMC4zMzNMMy4yNjQgNTguMTIzYTguMTMzIDguMTMzIDAgMCAwIDAgMTEuNWw1NS4xMTcgNTUuMTE0YzMuMTc0IDMuMTc0IDguMzIgMy4xNzQgMTEuNDk5IDBsNTQuODU4LTU0Ljg1OGE4LjEzNSA4LjEzNSAwIDAgMC0uMDAxLTExLjUwMSIvPjwvc3ZnPg==" class="img-fluid" alt="...">Git</h6>
+  <h6><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNTM2IiBoZWlnaHQ9IjE1MzYiIHZpZXdCb3g9IjAgMCAxNTM2IDE1MzYiPjxwYXRoIGZpbGw9IiNmZjQ2NDYiIGQ9Ik01MTkgMTA3MnE0LTYtMy0xM3EtOS03LTE0LTJxLTQgNiAzIDEzcTkgNyAxNCAybS0yOC00MXEtNS03LTEyLTRxLTYgNCAwIDEycTcgOCAxMiA1cTYtNCAwLTEzbS00MS00MHEyLTQtNS04cS03LTItOCAycS0zIDUgNCA4cTggMiA5LTJtMjEgMjNxMi0xIDEuNS00LjV0LTMuNS01LjVxLTYtNy0xMC0zdDEgMTFxNiA2IDExIDJtODYgNzVxMi03LTktMTFxLTktMy0xMyA0cS0yIDcgOSAxMXE5IDMgMTMtNG00MiAzcTAtOC0xMi04cS0xMCAwLTEwIDh0MTEgOHQxMS04bTM5LTdxLTItNy0xMy01dC05IDlxMiA4IDEyIDZ0MTAtMTBtNjQyLTMxN3EwLTIxMi0xNTAtMzYyVDc2OCAyNTZUNDA2IDQwNlQyNTYgNzY4cTAgMTY3IDk4IDMwMC41VDYwNiAxMjU0cTE4IDMgMjYuNS01dDguNS0yMHEwLTUyLTEtOTVxLTYgMS0xNS41IDIuNXQtMzUuNSAydC00OC00dC00My41LTIwVDQ2OCAxMDczcS0yMy01OS01Ny03NHEtMi0xLTQuNS0zLjVsLTgtOGwtNy05LjVsNC03LjVMNDE1IDk2N3E2IDAgMTUgMnQzMCAxNS41dDMzIDM1LjVxMTYgMjggMzcuNSA0MnQ0My41IDE0dDM4LTMuNXQzMC05LjVxNy00NyAzMy02OXEtNDktNi04Ni0xOC41dC03My0zOXQtNTUuNS03NlQ0NDEgNzQxcTAtNzkgNTMtMTM3cS0yNC02MiA1LTEzNnExOS02IDU0LjUgNy41VDYxNCA1MDVsMjYgMTZxNTgtMTcgMTI4LTE3dDEyOCAxN3ExMS03IDI4LjUtMTh0NTUuNS0yNnQ1Ny05cTI5IDc0IDUgMTM2cTUzIDU4IDUzIDEzN3EwIDU3LTE0IDEwMC41dC0zNS41IDcwVDk5MiA5NTZ0LTYyLjUgMjZ0LTY4LjUgMTJxMzUgMzEgMzUgOTVxMCA0MC0uNSA4OXQtLjUgNTFxMCAxMiA4LjUgMjB0MjYuNSA1cTE1NC01MiAyNTItMTg1LjV0OTgtMzAwLjVtMjU2LTQ4MHY5NjBxMCAxMTktODQuNSAyMDMuNVQxMjQ4IDE1MzZIMjg4cS0xMTkgMC0yMDMuNS04NC41VDAgMTI0OFYyODhRMCAxNjkgODQuNSA4NC41VDI4OCAwaDk2MHExMTkgMCAyMDMuNSA4NC41VDE1MzYgMjg4Ii8+PC9zdmc+" class="img-fluid" alt="...">Github</h6>
+  <h6><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMjgiIGhlaWdodD0iMTI4IiB2aWV3Qm94PSIwIDAgMTI4IDEyOCI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJTVkdEY09IeDZsRSIgeDE9Ijc2LjA3OSIgeDI9IjUyMy40OCIgeTE9IjEwLjc5OCIgeTI9IjM2NS45NSIgZ3JhZGllbnRUcmFuc2Zvcm09InRyYW5zbGF0ZSgxLjExIDE0LjYxMylzY2FsZSguMjQ1NjYpIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjOTAxM2ZlIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjNjYxMGYyIi8+PC9saW5lYXJHcmFkaWVudD48bGluZWFyR3JhZGllbnQgaWQ9IlNWRzgyWVJpY250IiB4MT0iMTkzLjUxIiB4Mj0iMjkzLjUxIiB5MT0iMTA5Ljc0IiB5Mj0iMjc4Ljg3IiBncmFkaWVudFRyYW5zZm9ybT0idHJhbnNsYXRlKDAgNTIpIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjZmZmIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjZjFlNWZjIi8+PC9saW5lYXJHcmFkaWVudD48ZmlsdGVyIGlkPSJTVkdoRHVSS2VsVyIgd2lkdGg9IjE5NyIgaGVpZ2h0PSIyNDkiIHg9IjE2MS45IiB5PSIxMzUuNDYiIGNvbG9yLWludGVycG9sYXRpb24tZmlsdGVycz0ic1JHQiIgZmlsdGVyVW5pdHM9InVzZXJTcGFjZU9uVXNlIj48ZmVGbG9vZCBmbG9vZC1vcGFjaXR5PSIwIiByZXN1bHQ9IkJhY2tncm91bmRJbWFnZUZpeCIvPjxmZUNvbG9yTWF0cml4IGluPSJTb3VyY2VBbHBoYSIgdmFsdWVzPSIwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAxMjcgMCIvPjxmZU9mZnNldCBkeT0iNCIvPjxmZUdhdXNzaWFuQmx1ciBzdGREZXZpYXRpb249IjgiLz48ZmVDb2xvck1hdHJpeCB2YWx1ZXM9IjAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAuMTUgMCIvPjxmZUJsZW5kIGluMj0iQmFja2dyb3VuZEltYWdlRml4IiByZXN1bHQ9ImVmZmVjdDFfZHJvcFNoYWRvdyIvPjxmZUJsZW5kIGluPSJTb3VyY2VHcmFwaGljIiBpbjI9ImVmZmVjdDFfZHJvcFNoYWRvdyIgcmVzdWx0PSJzaGFwZSIvPjwvZmlsdGVyPjwvZGVmcz48cGF0aCBmaWxsPSJ1cmwoI1NWR0RjT0h4NmxFKSIgZD0iTTE0Ljk4NSAyNy43MTJjLS4yMzctNi44MTUgNS4wNzItMTMuMDk5IDEyLjI0OS0xMy4wOTloNzMuNTRjNy4xNzcgMCAxMi40ODYgNi4yODQgMTIuMjQ5IDEzLjA5OWMtLjIyOCA2LjU0Ni4wNjggMTUuMDI2IDIuMjAyIDIxLjk0YzIuMTQxIDYuOTM2IDUuNzUxIDExLjMxOSAxMS42NjQgMTEuODgzdjYuMzg3Yy01LjkxMy41NjQtOS41MjMgNC45NDctMTEuNjY0IDExLjg4M2MtMi4xMzQgNi45MTQtMi40MyAxNS4zOTQtMi4yMDIgMjEuOTRjLjIzNyA2LjgxNS01LjA3MiAxMy4wOTgtMTIuMjQ5IDEzLjA5OGgtNzMuNTRjLTcuMTc3IDAtMTIuNDg2LTYuMjg0LTEyLjI0OS0xMy4wOThjLjIyOC02LjU0Ni0uMDY4LTE1LjAyNi0yLjIwMy0yMS45NGMtMi4xNC02LjkzNS01Ljc2LTExLjMxOS0xMS42NzMtMTEuODgzdi02LjM4N2M1LjkxMy0uNTYzIDkuNTMzLTQuOTQ3IDExLjY3My0xMS44ODNjMi4xMzUtNi45MTQgMi40My0xNS4zOTQgMi4yMDMtMjEuOTQiLz48cGF0aCBmaWxsPSJ1cmwoI1NWRzgyWVJpY250KSIgZD0iTTI2Ny4xIDM2NC40NmM0Ny4yOTcgMCA3NS43OTgtMjMuMTU4IDc1Ljc5OC02MS4zNTVjMC0yOC44NzMtMjAuMzM2LTQ5Ljc3Ni01MC41MzItNTMuMDg1di0xLjIwM2MyMi4xODUtMy42MDkgMzkuNTk0LTI0LjIxMSAzOS41OTQtNDcuMjE5YzAtMzIuNzgzLTI1Ljg4Mi01NC4xMzgtNjUuMzIyLTU0LjEzOGgtODguNzR2MjE3em0tNTQuNjkyLTE4OS40OGg0NS45MTFjMjQuOTU4IDAgMzkuMTMxIDExLjEyOCAzOS4xMzEgMzEuMjc5YzAgMjEuNTA1LTE2LjQ4NCAzMy41MzUtNDYuMzcyIDMzLjUzNWgtMzguNjd6bTAgMTYxLjk2di03MS40MzFoNDUuNjAyYzMyLjY2MSAwIDQ5LjYwOCAxMi4wMyA0OS42MDggMzUuNDljMCAyMy40NTktMTYuNDg0IDM1Ljk0MS00Ny42MDUgMzUuOTQxeiIgZmlsdGVyPSJ1cmwoI1NWR2hEdVJLZWxXKSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMS40OTQgMi4yMDMpc2NhbGUoLjI0NTY2KSIvPjwvc3ZnPg==" class="img-fluid" alt="...">Bootstrap</h6></p>
+  </div>
+</div>
+<div class="button">
+<button type="button" class="btn btn-outline-danger" id="btn" data-bs-toggle="modal" data-bs-target="#modal">Hire Me</button>
+<button type="button" class="btn btn-outline-danger" id="btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Contact Me</button>
+</div>
+<div class="modal" tabindex="-1" id="modal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Send Contact Info</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Name :</p>
+        <p>Contact details :</p>
+        <p>Email :</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">Contact details</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <!-- Vertically centered modal -->
+<div class="modal-dialog modal-dialog-centered">
+  Mobile No: 9247577555
+</div>
+
+<!-- Vertically centered scrollable modal -->
+<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+  Email: nagendrakothapalli444@gmail.com
+</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Understood</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
+</html>
