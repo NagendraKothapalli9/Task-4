@@ -112,6 +112,7 @@
           border: 1px solid white;
           background-color: #36454F;
           margin-top: 70px;
+          width: 100%;
         }
         .h1{
           text-align: left;
@@ -124,7 +125,6 @@
           padding-top: 150px;
         }
         #logo span{
-          font-size: 12px;
           padding-bottom: 10px;
         }
       @media (max-width: 900px ){
